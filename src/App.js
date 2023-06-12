@@ -1,23 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
+import Form from './components/Form';
+import Task from './components/Tasks';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App border-2 border-double" style={{ maxWidth: '100%', maxHeight: '100%', backgroundColor: '#ff4444' }}>
+     
+      <Form/>
+      <Task/>
+    
     </div>
   );
 }
